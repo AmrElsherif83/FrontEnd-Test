@@ -3,7 +3,7 @@ import FileUploader from "./components/FileUploader";
 import { countWords } from "./utils/wordCounter";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
-import { theme } from "./styles/theme";
+import { lightTheme, darkTheme } from "./styles/theme";
 import styled from "styled-components";
 
 const ToggleButton = styled.button`
@@ -28,17 +28,13 @@ const App = () => {
     setWordCounts(countWords(text));
   };
 
-  const toggleTheme = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
-    <ThemeProvider theme={darkMode ? { ...theme, colors: { ...theme.colors, background: theme.colors.darkBackground, text: theme.colors.darkText } } : theme}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <GlobalStyles />
       <div className="container">
         <h2>📂 Word Counter</h2>
         <FileUploader onFileLoaded={handleFileLoaded} />
-        <ToggleButton onClick={toggleTheme} darkMode={darkMode}>
+        <ToggleButton onClick={() => setDarkMode(!darkMode)} darkMode={darkMode}>
           {darkMode ? "☀ Light Mode" : "🌙 Dark Mode"}
         </ToggleButton>
 

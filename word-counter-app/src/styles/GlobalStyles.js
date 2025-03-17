@@ -20,13 +20,15 @@ const GlobalStyles = createGlobalStyle`
 
   .container {
     max-width: 600px;
-    background: ${(props) => props.theme.colors.secondary};
+    background: ${(props) => props.theme.colors.cardBackground};
     padding: 25px;
     border-radius: 15px;
     box-shadow: ${(props) => props.theme.shadows.card};
     text-align: center;
     animation: fadeIn 0.6s ease-in-out;
+    transition: background 0.5s ease-in-out, color 0.3s ease-in-out;
   }
+
 
   h2 {
     color: ${(props) => props.theme.colors.primary};
@@ -68,7 +70,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   pre {
-    background: #f4f4f4;
+    background: ${(props) => props.theme.colors.cardBackground}; /* ✅ Now adapts to dark mode */
     padding: 12px;
     border-radius: 8px;
     overflow-x: auto;
@@ -84,7 +86,7 @@ const GlobalStyles = createGlobalStyle`
     margin-top: 15px;
     border-radius: 10px;
     padding: 12px;
-    background: white;
+    background: ${(props) => props.theme.colors.cardBackground};
     box-shadow: ${(props) => props.theme.shadows.card};
   }
 
