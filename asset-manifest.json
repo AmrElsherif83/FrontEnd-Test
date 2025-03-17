@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/word-counter-app/static/css/main.e6c13ad2.css",
-    "main.js": "/word-counter-app/static/js/main.67cf3152.js",
-    "static/js/453.cd6c91b5.chunk.js": "/word-counter-app/static/js/453.cd6c91b5.chunk.js",
-    "index.html": "/word-counter-app/index.html",
-    "main.e6c13ad2.css.map": "/word-counter-app/static/css/main.e6c13ad2.css.map",
-    "main.67cf3152.js.map": "/word-counter-app/static/js/main.67cf3152.js.map",
-    "453.cd6c91b5.chunk.js.map": "/word-counter-app/static/js/453.cd6c91b5.chunk.js.map"
+    "main.css": "/FrontEnd-Test/static/css/main.e6c13ad2.css",
+    "main.js": "/FrontEnd-Test/static/js/main.cddcf8ae.js",
+    "static/js/453.cd6c91b5.chunk.js": "/FrontEnd-Test/static/js/453.cd6c91b5.chunk.js",
+    "index.html": "/FrontEnd-Test/index.html",
+    "main.e6c13ad2.css.map": "/FrontEnd-Test/static/css/main.e6c13ad2.css.map",
+    "main.cddcf8ae.js.map": "/FrontEnd-Test/static/js/main.cddcf8ae.js.map",
+    "453.cd6c91b5.chunk.js.map": "/FrontEnd-Test/static/js/453.cd6c91b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.67cf3152.js"
+    "static/js/main.cddcf8ae.js"
   ]
 }
